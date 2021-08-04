@@ -4,6 +4,9 @@ import './Animations.css'
 
 import Akira from './assets/Pagina_Akira.png'
 import SpiderMan from './assets/Pagina_SpiderMan.png'
+import LinaPDF from './assets/Pagina_LinaPDF.png'
+import Exchange from './assets/SiteExchange.png'
+
 
 import { Carousel } from 'primereact/carousel';
 
@@ -22,11 +25,16 @@ function App() {
   },{
     nome: 'Projeto SpiderMan',
     imagem: SpiderMan,
-    url: 'http://www.google.com',
+    url: 'https://spidermannasseryousef.netlify.app/',
   },{
-    nome: 'Projeto SpiderMan',
-    imagem: SpiderMan,
-    url: 'http://www.google.com',
+  },{
+    nome: 'Projeto Lina PDF',
+    imagem: LinaPDF,
+    url: 'https://linapdf.netlify.app/',
+  },{
+    nome: 'Projeto Exchange',
+    imagem: Exchange,
+    url: 'https://exchangecoins.netlify.app/',
   },])
 
   function productTemplate(item) {
