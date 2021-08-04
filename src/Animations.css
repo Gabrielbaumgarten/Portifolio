@@ -1,0 +1,143 @@
+
+
+@keyframes show-side-bar{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 7vw;
+  }
+}
+
+@keyframes show-components{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-800px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: 0.4em;
+    opacity: 1;
+  }
+}
+
+
+.informacoes-pessoais.entrada .about-me h1,
+.habilities.entrada > h1:first-child,
+.projects.entrada > h1,
+.contact > h1{
+  animation: fade-in-bottom-title 1s .5s ease-in both;
+}
+.informacoes-pessoais.entrada .formacao-academica h1{
+  animation: fade-in-bottom-title 1s 1s ease-in both;
+
+}
+.informacoes-pessoais.entrada .about-me p{
+animation: fade-in-bottom 1s .75s ease-in both;
+}
+
+.informacoes-pessoais.entrada .formacao-academica p{
+  animation: fade-in-bottom 1s 1.25s ease-in both;
+}
+
+.habilities.entrada .habilidades-tecnicas{
+  animation: fade-in-left 1s 1.25s ease-in both;
+}
+
+.habilities.entrada .habilidades-pessoais{
+  animation: fade-in-right 1s 1.25s ease-in both;
+}
+
+.projects.entrada .carousel{
+  animation: flip-in-hor-top 2s 1.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.contact.entrada p{
+  animation: focus-in-expand-fwd 2s 1.25s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.contact.contact.entrada svg{
+  animation: show-components 1s 3.25s ease-in both;
+}
+
+@keyframes fade-in-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+@keyframes fade-in-bottom-title {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 0.2;
+    }
+  }
+
+@keyframes fade-in-left {
+    0% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+@keyframes fade-in-right {
+    0% {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes flip-in-hor-top {
+    0% {
+      transform: rotateX(-80deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+
+
+
+  
