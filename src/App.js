@@ -18,7 +18,7 @@ import photo from './assets/GabrielBaumgarten02.png'
 
 function App() {
 
-  const paginas = useState([{
+  const [paginas] = useState([{
     nome: 'Projeto Akira',
     imagem: Akira,
     url: 'https://chatbotinstitucional.netlify.app',
@@ -26,8 +26,7 @@ function App() {
     nome: 'Projeto SpiderMan',
     imagem: SpiderMan,
     url: 'https://spidermannasseryousef.netlify.app/',
-  },
-  {
+  },{
     nome: 'Projeto Lina PDF',
     imagem: LinaPDF,
     url: 'https://linapdf.netlify.app/',
